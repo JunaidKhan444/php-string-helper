@@ -14,5 +14,8 @@
             "email": "mrjunaid444@gmail.com"
         }
     ],
+    "require": {
+        "php": ">=8.0"
+    },
     "minimum-stability": "stable"
 }
