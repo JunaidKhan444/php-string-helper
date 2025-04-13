@@ -1,5 +1,5 @@
 {
-    "name": "junaidkhan/string-helper",
+    "name": "junaidkhan/php-string-helper",
     "description": "A simple PHP helper library for common string operations.",
     "type": "library",
     "license": "MIT",
