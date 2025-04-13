@@ -1,6 +1,6 @@
-# StringHelper
+# String Helper
 
-**StringHelper** is a simple PHP helper library for common string operations, built for PHP 8+.
+**String Helper** is a simple PHP helper library for common string operations, built for PHP 8+.
 
 ## 🚀 Usage
 
@@ -20,7 +20,7 @@ use JunaidKhan\StringHelper\StringHelper;
 
 ```php
 // Slugify
-echo StringHelper::slugify("Code Smarter Today!"); // code-smarter-today
+echo StringHelper::slugify('  PHP is Great!!  '); // php-is-great
 
 // Case conversions
 echo StringHelper::toCamelCase("learn_php_fast"); // learnPhpFast
