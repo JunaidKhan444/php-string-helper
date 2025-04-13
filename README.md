@@ -1,6 +1,6 @@
 # StringHelper
 
-**StringHelper** StringHelper is a simple PHP helper library for common string operations, built for PHP 8+.
+**StringHelper** is a simple PHP helper library for common string operations, built for PHP 8+.
 
 ## 🚀 Usage
 
@@ -20,26 +20,27 @@ use JunaidKhan\StringHelper\StringHelper;
 
 ```php
 // Slugify
-echo StringHelper::slugify("Hello World!"); // hello-world
+echo StringHelper::slugify("Code Smarter Today!"); // code-smarter-today
 
 // Case conversions
-echo StringHelper::toCamelCase("hello_world"); // helloWorld
-echo StringHelper::toSnakeCase("helloWorld");  // hello_world
-echo StringHelper::toKebabCase("helloWorld");  // hello-world
+echo StringHelper::toCamelCase("learn_php_fast"); // learnPhpFast
+echo StringHelper::toSnakeCase("learnPhpFast");   // learn_php_fast
+echo StringHelper::toKebabCase("learnPhpFast");   // learn-php-fast
 
 // String checks
-echo StringHelper::startsWith("Laravel", "Lar");        // true
-echo StringHelper::endsWith("Framework", "work");       // true
-echo StringHelper::contains("OpenAI is awesome", "AI"); // true
+echo StringHelper::startsWith("FrameworkX", "Frame");       // true
+echo StringHelper::endsWith("BackendTool", "Tool");         // true
+echo StringHelper::contains("Debugging is essential", "bug"); // true
 
 // Text formatting
-echo StringHelper::truncate("This is a long string", 10); // This is...
-echo StringHelper::limitWords("This is a long sentence.", 3); // This is a...
+echo StringHelper::truncate("Mastering PHP step by step", 12); // Mastering P...
+echo StringHelper::limitWords("Write clean and efficient code.", 3); // Write clean and...
 
 // Other utilities
-echo StringHelper::isJson('{"valid":true}');               // true
-echo StringHelper::removeSpecialChars("hello@world!");     // helloworld
-echo StringHelper::reverse("hello");                       // olleh
+echo StringHelper::isJson('{"success":true}');                  // true
+echo StringHelper::removeSpecialChars("email@domain.com!");     // emaildomaincom
+echo StringHelper::reverse("developer");                        // repoleved
+
 ```
 
 ## 📄 License
