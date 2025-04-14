@@ -33,7 +33,6 @@ echo StringHelper::endsWith("BackendTool", "Tool");         // true
 echo StringHelper::contains("Debugging is essential", "bug"); // true
 
 // Text formatting
-echo StringHelper::truncate("Mastering PHP step by step", 12); // Mastering P...
 echo StringHelper::limitWords("Write clean and efficient code.", 3); // Write clean and...
 
 // Other utilities
