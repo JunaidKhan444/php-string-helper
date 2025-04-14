@@ -17,13 +17,16 @@
     "require": {
         "php": ">=8.0"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "require-dev": {
         "pestphp/pest": "^3.8"
     },
     "config": {
         "allow-plugins": {
-            "pestphp/pest-plugin": false
+            "pestphp/pest-plugin": true
         }
+    },
+    "scripts": {
+        "test": "./vendor/bin/pest --do-not-cache-result"
     }
 }
