@@ -43,7 +43,7 @@ class Formatter
         }
 
         if (!$preserveHtml) {
-            $trimmed = trim($text);
+            $trimmed = mb_trim($text);
 
             if ($trimmed === '') {
                 return $originalLength >= $suffixLength
@@ -77,7 +77,7 @@ class Formatter
 
     public static function limitWords(string $text, int $wordLimit, string $suffix): string
     {
-        $text = preg_replace('/\s+/', ' ', trim($text));
+        $text = preg_replace('/\s+/', ' ', mb_trim($text));
         $words = explode(' ', $text);
 
         if (count($words) <= $wordLimit) {
@@ -117,7 +117,7 @@ class Formatter
             ? '/[^\p{L}\p{N}' . ($preserveUnderscore ? '_' : '') . ($preserveDash ? '\-' : '') . '\s]/u'
             : '/[^' . $allowed . ']/';
 
-        return trim(preg_replace($pattern, '', $text));
+        return mb_trim(preg_replace($pattern, '', $text));
     }
 
     public static function reverse(string $text): string
@@ -141,7 +141,7 @@ class Formatter
         $cut = mb_substr($text, 0, $limit + 1);
         $spacePos = mb_strrpos($cut, ' ');
         if ($spacePos !== false && $spacePos > 0) {
-            return rtrim(mb_substr($cut, 0, $spacePos));
+            return mb_rtrim(mb_substr($cut, 0, $spacePos));
         }
 
         return mb_substr($text, 0, $limit);
