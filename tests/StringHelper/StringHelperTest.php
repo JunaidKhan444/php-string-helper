@@ -255,7 +255,7 @@ describe('Formatter -> limitWords', function () {
     });
 
     it('handles Japanese characters correctly', function () {
-        expect(StringHelper::limitWords('これは日本語の文章です', 3, '...'))->toBe('これは日本語の文章です'); // It's one "word"
+        expect(StringHelper::limitWords('これは日本語の文章です', 3, '...'))->toBe('これは日本語の文章です');
     });
 
     it('works with punctuation and trims properly', function () {
