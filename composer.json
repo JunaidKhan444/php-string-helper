@@ -1,6 +1,6 @@
 {
     "name": "junaidkhan/php-string-helper",
-    "description": "A simple PHP helper library for common string operations.",
+    "description": "A PHP helper library offering utilities like truncate, slugify, casing conversions, and more.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -17,7 +17,7 @@
     "require": {
         "php": ">=8.0"
     },
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "require-dev": {
         "pestphp/pest": "^3.8"
     },
@@ -28,5 +28,25 @@
     },
     "scripts": {
         "test": "./vendor/bin/pest --do-not-cache-result"
-    }
+    },
+    "keywords": [
+        "php",
+        "string",
+        "string helper",
+        "string utilities",
+        "string manipulation",
+        "text processing",
+        "formatter",
+        "truncate",
+        "limit words",
+        "slugify",
+        "slug",
+        "camelCase",
+        "snake_case",
+        "kebab-case",
+        "json",
+        "reverse",
+        "helpers",
+        "library"
+    ]
 }
