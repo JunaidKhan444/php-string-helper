@@ -46,29 +46,29 @@ use JunaidKhan\StringHelper\StringHelper;
 echo StringHelper::slugify('  Mastering PHP in 2025!  '); // master-php-in-2025
 
 // Case conversions
-echo StringHelper::toCamelCase("modern_php_tutorial");       // modernPhpTutorial
-echo StringHelper::toSnakeCase("modernPhpTutorial");         // modern_php_tutorial
-echo StringHelper::toKebabCase("modernPhpTutorial");         // modern-php-tutorial
+echo StringHelper::toCamelCase('modern_php_tutorial');       // modernPhpTutorial
+echo StringHelper::toSnakeCase('modernPhpTutorial');         // modern_php_tutorial
+echo StringHelper::toKebabCase('modernPhpTutorial');         // modern-php-tutorial
 
 // String checks
-echo StringHelper::startsWith("FrameworkX", "Frame");         // true
-echo StringHelper::endsWith("SuperTool", "Tool");             // true
-echo StringHelper::contains("Debugging helps developers", "help"); // true
+echo StringHelper::startsWith('FrameworkX', 'Frame');         // true
+echo StringHelper::endsWith('SuperTool', 'Tool');             // true
+echo StringHelper::contains('Debugging helps developers', 'help'); // true
 
 // Truncate with suffix (text, maxLength, suffix, wordSafe, stripHtml, preserveHtml)
-echo StringHelper::truncate("Mastering PHP in 2025!", 15, "...", true, false, false); // Mastering PHP...
+echo StringHelper::truncate('Mastering PHP in 2025!', 15, '...', true, false, false); // Mastering PHP...
 
 // Limit words with suffix (text, wordLimit, suffix)
-echo StringHelper::limitWords("Master PHP with real-world projects", 3, "..."); // Master PHP with...
+echo StringHelper::limitWords('Master PHP with real-world projects', 3, '...'); // Master PHP with...
 
 // Reverse string (text)
-echo StringHelper::reverse("Productivity"); // ytivitcudorP
+echo StringHelper::reverse('Productivity'); // ytivitcudorP
 
 // Remove special characters (text, preserveUnderscore, preserveDash, allowUnicode)
-echo StringHelper::removeSpecialChars("E-mail@example.com!", false, false, false); // Emailexamplecom
+echo StringHelper::removeSpecialChars('E-mail@example.com!', false, false, false); // Emailexamplecom
 
 // Check valid JSON (string)
-echo StringHelper::isJson('{"valid":true}'); // true
+echo StringHelper::isJson('{'valid':true}'); // true
 ```
 
 ---
