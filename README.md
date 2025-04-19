@@ -1,5 +1,15 @@
 # String Helper
 
+![Packagist](https://img.shields.io/packagist/v/junaidkhan/php-string-helper)
+![PHP Version](https://img.shields.io/packagist/php-v/junaidkhan/php-string-helper)
+![Downloads](https://img.shields.io/packagist/dt/junaidkhan/php-string-helper)
+![License](https://img.shields.io/github/license/junaidkhan444/php-string-helper)
+![Issues](https://img.shields.io/github/issues/junaidkhan444/php-string-helper)
+![Contributors](https://img.shields.io/github/contributors/junaidkhan444/php-string-helper)
+![Tests](https://github.com/junaidkhan444/php-string-helper/actions/workflows/tests.yml/badge.svg)
+
+
+
 **String Helper** is a PHP helper library for common string operations, built for PHP 8+.
 
 ---
