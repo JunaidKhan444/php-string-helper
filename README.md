@@ -68,7 +68,7 @@ echo StringHelper::reverse('Productivity'); // ytivitcudorP
 echo StringHelper::removeSpecialChars('E-mail@example.com!', false, false, false); // Emailexamplecom
 
 // Check valid JSON (string)
-echo StringHelper::isJson('{'valid':true}'); // true
+echo StringHelper::isJson('{"valid":true}'); // true
 ```
 
 ---
