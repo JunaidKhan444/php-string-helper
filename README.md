@@ -2,7 +2,7 @@
 
 [![Packagist](https://img.shields.io/packagist/v/junaidkhan/php-string-helper)](https://packagist.org/packages/junaidkhan/php-string-helper)
 [![PHP Version](https://img.shields.io/packagist/php-v/junaidkhan/php-string-helper)](https://packagist.org/packages/junaidkhan/php-string-helper)
-[![Downloads](https://img.shields.io/packagist/dt/junaidkhan/php-string-helper)](https://packagist.org/packages/junaidkhan/php-string-helper/stats)
+[![Downloads](https://img.shields.io/packagist/dt/junaidkhan/php-string-helper)](https://packagist.org/packages/junaidkhan/php-string-helper)
 [![License](https://img.shields.io/github/license/junaidkhan444/php-string-helper)](https://github.com/junaidkhan444/php-string-helper/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/junaidkhan444/php-string-helper)](https://github.com/junaidkhan444/php-string-helper/issues)
 [![Contributors](https://img.shields.io/github/contributors/junaidkhan444/php-string-helper)](https://github.com/junaidkhan444/php-string-helper/graphs/contributors)
@@ -14,14 +14,14 @@
 
 ##  Features
 
--  Convert strings to `camelCase`, `snake_case`, and `kebab-case`
 -  Truncate strings by character count (with word-safe, custom suffixes and HTML-stripping or HTML-preserving)
 -  Limit strings by word count with custom suffixes
 -  Check if strings start with, end with, or contain a substring
--  Reverse strings easily
 -  Remove special characters with optional Unicode, dash, or underscore preservation
+-  Reverse strings easily
 -  Detect valid JSON strings with a simple check
 -  Create clean slugs for URLs or SEO
+-  Convert strings to `camelCase`, `snake_case`, and `kebab-case`
 
 ---
 
