@@ -52,7 +52,7 @@ class StringHelper
         return Formatter::truncate($text, $maxLength, $suffix, $wordSafe, $stripHtml, $preserveHtml);
     }
 
-    public static function limitWords(string $text, int $wordLimit, string $suffix = '...',): string
+    public static function limitWords(string $text, int $wordLimit, string $suffix = '...'): string
     {
         return Formatter::limitWords($text, $wordLimit, $suffix);
     }
