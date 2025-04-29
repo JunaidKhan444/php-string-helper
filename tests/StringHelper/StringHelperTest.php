@@ -14,8 +14,21 @@ describe('Slugifier -> slugify', function () {
         expect(StringHelper::slugify('snake_case'))->toBe('snake-case');
         expect(StringHelper::slugify('kebab-case'))->toBe('kebab-case');
         expect(StringHelper::slugify('mixed_Formats-WithSymbols!'))->toBe('mixed-formats-with-symbols');
-        expect(StringHelper::slugify('AlreadyValid'))->toBe('already-valid');
+        expect(StringHelper::slugify('already-valid'))->toBe('already-valid');
         expect(StringHelper::slugify('---Totally@@@Chaotic___Case99!'))->toBe('totally-chaotic-case99');
+    });
+
+    it('can slugify with custom symbol', function () {
+        expect(StringHelper::slugify('Hello World!', '$'))->toBe('hello$world');
+        expect(StringHelper::slugify('  PHP is Great!!  ', '$'))->toBe('php$is$great');
+        expect(StringHelper::slugify('Make@it#clean', '$'))->toBe('make$it$clean');
+        expect(StringHelper::slugify('camelCase', '$'))->toBe('camel$case');
+        expect(StringHelper::slugify('PascalCase', '$'))->toBe('pascal$case');
+        expect(StringHelper::slugify('snake_case', '$'))->toBe('snake$case');
+        expect(StringHelper::slugify('kebab-case', '$'))->toBe('kebab$case');
+        expect(StringHelper::slugify('mixed_Formats-WithSymbols!', '$'))->toBe('mixed$formats$with$symbols');
+        expect(StringHelper::slugify('already$valid', '$'))->toBe('already$valid');
+        expect(StringHelper::slugify('---Totally@@@Chaotic___Case99!', '$'))->toBe('totally$chaotic$case99');
     });
 });
 
