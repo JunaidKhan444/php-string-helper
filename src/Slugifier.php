@@ -4,13 +4,13 @@ namespace JunaidKhan\StringHelper;
 
 class Slugifier
 {
-    public static function slugify(string $text): string
+    public static function slugify(string $text, string $symbol): string
     {
         $text = preg_replace('/([A-Z]+)([A-Z][a-z])/', '$1 $2', mb_trim($text));
         $text = preg_replace('/(?<=[a-z0-9])([A-Z])/', ' $1', $text);
         $text = preg_replace('/[^a-zA-Z0-9]+/', ' ', $text);
 
-        return preg_replace('/\s+/', '-', mb_trim(strtolower($text)));
+        return preg_replace('/\s+/', $symbol, mb_trim(strtolower($text)));
     }
 
     public static function toCamelCase(string $text): string

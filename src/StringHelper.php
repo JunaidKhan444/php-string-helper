@@ -5,9 +5,9 @@ namespace JunaidKhan\StringHelper;
 class StringHelper
 {
     // Slugifier methods
-    public static function slugify(string $text): string
+    public static function slugify(string $text, string $symbol = '-'): string
     {
-        return Slugifier::slugify($text);
+        return Slugifier::slugify($text, $symbol);
     }
 
     public static function toCamelCase(string $text): string
